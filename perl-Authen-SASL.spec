@@ -63,19 +63,19 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL.pod
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/CRAM_MD5.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/EXTERNAL.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl.pod
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl/ANONYMOUS.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl/CRAM_MD5.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl/DIGEST_MD5.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl/EXTERNAL.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl/GSSAPI.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl/LOGIN.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Authen/SASL/Perl/PLAIN.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL.pod
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/CRAM_MD5.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/EXTERNAL.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl.pod
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl/ANONYMOUS.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl/CRAM_MD5.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl/DIGEST_MD5.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl/EXTERNAL.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl/GSSAPI.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl/LOGIN.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Authen/SASL/Perl/PLAIN.pm
 
 %files dev
 %defattr(-,root,root,-)
