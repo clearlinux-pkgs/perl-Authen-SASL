@@ -4,7 +4,7 @@
 #
 Name     : perl-Authen-SASL
 Version  : 2.1401
-Release  : 16
+Release  : 17
 URL      : https://cpan.metacpan.org/authors/id/G/GB/GBARR/Authen-SASL-2.1401.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/G/GB/GBARR/Authen-SASL-2.1401.tar.gz
 Summary  : 'SASL Authentication framework'
