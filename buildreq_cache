@@ -1,2 +1,4 @@
-2.16
-perl(Module::Install)
+2.1700
+perl(Pod::Coverage::TrustPod)
+perl(Test::Pod)
+perl(Test::Pod::Coverage)
