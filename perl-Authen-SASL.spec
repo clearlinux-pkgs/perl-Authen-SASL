@@ -5,7 +5,7 @@
 #
 Name     : perl-Authen-SASL
 Version  : 2.1700
-Release  : 24
+Release  : 25
 URL      : https://cpan.metacpan.org/authors/id/E/EH/EHUELS/Authen-SASL-2.1700.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/EH/EHUELS/Authen-SASL-2.1700.tar.gz
 Summary  : 'SASL Authentication framework'
