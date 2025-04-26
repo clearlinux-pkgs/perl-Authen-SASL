@@ -7,12 +7,13 @@
 #
 Name     : perl-Authen-SASL
 Version  : 2.1800
-Release  : 29
+Release  : 30
 URL      : https://cpan.metacpan.org/authors/id/E/EH/EHUELS/Authen-SASL-2.1800.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/EH/EHUELS/Authen-SASL-2.1800.tar.gz
 Summary  : 'SASL Authentication framework'
 Group    : Development/Tools
-License  : Artistic-1.0-Perl
+License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
+Requires: perl-Authen-SASL-license = %{version}-%{release}
 Requires: perl-Authen-SASL-perl = %{version}-%{release}
 Requires: perl(GSSAPI)
 BuildRequires : buildreq-cpan
@@ -38,6 +39,14 @@ Requires: perl-Authen-SASL = %{version}-%{release}
 
 %description dev
 dev components for the perl-Authen-SASL package.
+
+
+%package license
+Summary: license components for the perl-Authen-SASL package.
+Group: Default
+
+%description license
+license components for the perl-Authen-SASL package.
 
 
 %package perl
@@ -75,6 +84,8 @@ make TEST_VERBOSE=1 test || :
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-Authen-SASL
+cp %{_builddir}/Authen-SASL-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/perl-Authen-SASL/699e9fe433789d3af8bf1bcf7cd4b7954d9d9c6c || :
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -101,6 +112,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/Authen::SASL::Perl::OAUTHBEARER.3
 /usr/share/man/man3/Authen::SASL::Perl::PLAIN.3
 /usr/share/man/man3/Authen::SASL::Perl::XOAUTH2.3
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-Authen-SASL/699e9fe433789d3af8bf1bcf7cd4b7954d9d9c6c
 
 %files perl
 %defattr(-,root,root,-)
